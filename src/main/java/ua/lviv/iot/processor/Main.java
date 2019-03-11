@@ -11,7 +11,7 @@ public class Main {
 
         try {
             inputText = StringProcessor.readInputText();
-            stringProcessor = new StringProcessor(inputText);
+            stringProcessor = new StringProcessor();
             System.out.println(stringProcessor.checkNumberOfVowels(inputText));
         } catch (IOException e) {
             e.printStackTrace();

@@ -16,7 +16,7 @@ public class StringProcessorTests {
     @Test
     void stringProcessorTests() {
         StringBuilder stringBuilder = new StringBuilder();
-        StringProcessor stringProcessor = new StringProcessor(inputText);
+        StringProcessor stringProcessor = new StringProcessor();
         stringProcessor.checkNumberOfVowels(inputText);
         String str = stringProcessor.checkNumberOfVowels(inputText);
         stringBuilder.append(str);

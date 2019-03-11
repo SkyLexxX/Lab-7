@@ -6,14 +6,12 @@ import java.util.regex.Pattern;
 
 public class StringProcessor {
 
-    private String inputString;
-    private String[] outputString;
-    private String str;
+//    public StringProcessor() {
+//    }
 
-    public StringProcessor(final String inputString) {
-        this.inputString = inputString;
-    }
-
+//    public StringProcessor(final String inputString) {
+//        this.inputString = inputString;
+//    }
 
     public static String readInputText() throws IOException {
         Scanner sc = new Scanner(System.in);
