@@ -10,13 +10,14 @@ public class StringProcessorTests {
 
     @BeforeEach
     void setUp() {
-        inputText = "Lorem Ipsum Trainee Equation Utopia has been the printer took a galley Queue Education sence";
+        inputText = "Lorem Ipsum Trainee Equation Utopia has been the printer took a galley " +
+                "Queue Education sence";
     }
 
     @Test
     void stringProcessorTests() {
         stringProcessor.checkNumberOfVowels(inputText);
         assertEquals("Lorem Ipsum has been the printer took galley sence ",
-                stringProcessor.showResults(), "There is an error in getCustomerBalance() or setCustomerBalance()");
+                stringProcessor.showResults(), "There is an error in checkNumberOfVowels");
     }
 }

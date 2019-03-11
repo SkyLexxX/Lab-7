@@ -8,21 +8,21 @@ public class StringProcessor {
 
     private String inputString;
     private String[] outputString;
-    StringBuilder stringBuilder = new StringBuilder();
     public String str ="";
+    StringBuilder stringBuilder = new StringBuilder();
 
     public StringProcessor() {
     }
 
-    public StringProcessor(String inputString) {
+    public StringProcessor(final String inputString) {
         this.inputString = inputString;
     }
 
-    public StringProcessor(String[] outputString) {
+    public StringProcessor(final String[] outputString) {
         this.outputString = outputString;
     }
 
-    public StringProcessor(String inputString, String[] outputString) {
+    public StringProcessor(final String inputString, String[] outputString) {
         this.inputString = inputString;
         this.outputString = outputString;
     }
@@ -32,7 +32,7 @@ public class StringProcessor {
         return sc.nextLine();
     }
 
-    public void checkNumberOfVowels(String string) {
+    public void checkNumberOfVowels(final String string) {
         final Pattern p = Pattern.compile("[aeiou]+", Pattern.CASE_INSENSITIVE);
 
         String[] outputString = string.split("\\s+");
