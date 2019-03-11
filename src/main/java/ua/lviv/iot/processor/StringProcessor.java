@@ -6,13 +6,6 @@ import java.util.regex.Pattern;
 
 public class StringProcessor {
 
-//    public StringProcessor() {
-//    }
-
-//    public StringProcessor(final String inputString) {
-//        this.inputString = inputString;
-//    }
-
     public static String readInputText() throws IOException {
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
