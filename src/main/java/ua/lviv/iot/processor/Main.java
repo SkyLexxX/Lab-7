@@ -7,12 +7,12 @@ public class Main {
     public static void main(final String[] args) throws IOException {
         System.out.println("Type please your text: ");
         String inputText = null;
-        StringProcessor processor = null;
+        StringProcessor stringProcessor = null;
 
         try {
             inputText = StringProcessor.readInputText();
-            processor = new StringProcessor(inputText);
-            processor.checkNumberOfVowels(inputText);
+            stringProcessor = new StringProcessor(inputText);
+            System.out.println(stringProcessor.checkNumberOfVowels(inputText));
         } catch (IOException e) {
             e.printStackTrace();
         }

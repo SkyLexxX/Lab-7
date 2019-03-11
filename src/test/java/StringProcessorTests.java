@@ -5,8 +5,7 @@ import ua.lviv.iot.processor.StringProcessor;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringProcessorTests {
-    StringProcessor stringProcessor = new StringProcessor();
-    String inputText;
+    private String inputText;
 
     @BeforeEach
     void setUp() {
@@ -16,8 +15,13 @@ public class StringProcessorTests {
 
     @Test
     void stringProcessorTests() {
+        StringBuilder stringBuilder = new StringBuilder();
+        StringProcessor stringProcessor = new StringProcessor(inputText);
         stringProcessor.checkNumberOfVowels(inputText);
+        String str = stringProcessor.checkNumberOfVowels(inputText);
+        stringBuilder.append(str);
+
         assertEquals("Lorem Ipsum has been the printer took galley sence ",
-                stringProcessor.showResults(), "There is an error in checkNumberOfVowels");
+                stringProcessor.showResults(stringBuilder), "There is an error in checkNumberOfVowels()");
     }
 }
